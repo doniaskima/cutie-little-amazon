@@ -13,10 +13,13 @@ const Header = () => {
      const user =useSelector(selectUser);
   return (
     <div className="header">
-                <img
+ 
+                        <img
                 className="header__logo"
                 src="http://pngimg.com/uploads/amazon/amazon_PNG11.png"
             />
+ 
+ 
                   <div className="headerSearch">
                      <input className="searchInput" type="text" />
                    <SearchIcon className="searchIcon" />

@@ -13,7 +13,7 @@ const Product = ({title,image,price}) => {
 
           </div>
           <img src={image} alt="" />
-          <button>Add to BasKet</button>
+          <button >Add to BasKet</button>
    </div>
   )
 }
