@@ -10,8 +10,8 @@ const Login = () => {
   return (
       <div className="login">
         <div className="login-container">
-                <h1 className="login-title">Welcome to Shopping</h1>
-                <button onClick={signIn}>Sign In</button>
+                <h1 className="login-title">it's <b>Shopping</b> Time !</h1>
+                <button className="btn-login" onClick={signIn}>Sign In</button>
         </div>
       </div>
   )

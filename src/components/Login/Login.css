@@ -3,9 +3,37 @@
     place-items: center;
     height: 100vh;
     width: 100%;
+    background-image: url("https://m.media-amazon.com/images/I/71o1uVhSZjL._SX3000_.jpg");
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    object-fit: contain;
 }
 
 .login-container {
     margin: 0;
     box-sizing: border-box;
+}
+
+.btn-login {
+    width: 300px;
+    background: linear-gradient(#e66465, #9198e5);
+    ;
+    font-weight: 800;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    color: white;
+    border-radius: 9px;
+}
+
+.btn-login:hover {
+    background: #e66465;
+}
+
+.login-title {
+    font-family: 'Oswald', sans-serif;
+    color: white;
+    font-weight: 800;
+    margin-left: 20px;
 }
