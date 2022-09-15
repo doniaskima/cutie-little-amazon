@@ -9,23 +9,24 @@ import Login from "./components/Login/Login";
 function App() {
   const user = useSelector(selectUser);
   const dispatch = useDispatch();
-
   useEffect(()=>{
-    auth.onAuthStateChanged((authUser)=>{
-      if(authUser){
-        // user is logged in 
-        login({
-          uid: authUser.uid,
-          photo:authUser.photo,
-          email:authUser.email,
-          displayName:authUser.displayName,
-        })
-      } else{
+       auth.onAuthStateChanged((authUser)=>{
+        if(authUser){
+         // user is logged in
+         dispatch(
+         login({
+            uid :authUser.uid,
+          photo:authUser.photoURL,
+          email: authUser.email,
+          displayName : authUser.displayName,
+            })
+         )
+        }else{
         // user is logged out 
-        dispatch(logout());
-      }
-    })
-  })
+        dispatch(logout())
+        }
+       })
+  },[])
 
   return (
     <div className="app">
